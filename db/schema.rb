@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_27_092503) do
+ActiveRecord::Schema.define(version: 2020_06_27_134316) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_06_27_092503) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "photo_url", default: "https://previews.123rf.com/images/alfazetchronicles/alfazetchronicles1701/alfazetchronicles170100109/69368640-alcoholic-cocktail-hand-drawn-sketch-vector-illustration-vintage-cocktail-icon-martini-with-olive-be.jpg"
   end
 
   create_table "doses", force: :cascade do |t|
